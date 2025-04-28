@@ -1,70 +1,112 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BeatMarker</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', sans-serif;
-            background: linear-gradient(145deg, #ffffff, #f8f4f9);
-            color: #333;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            min-height: 100vh;
-            text-align: center;
-        }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Nina Heinrich – Projekte</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #ffffff, #f8f4f9);
+      color: #333;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 2em;
+    }
 
-        h1 {
-            font-size: 3rem;
-            font-weight: 600;
-            margin-bottom: 0.5em;
-            color: #d63384;
-        }
+    h1 {
+      font-size: 2.5rem;
+      color: #d63384;
+      margin-bottom: 0.2em;
+    }
 
-        p {
-            font-size: 1.2rem;
-            max-width: 600px;
-            margin-bottom: 2em;
-        }
+    p {
+      font-size: 1.1rem;
+      color: #666;
+      margin-bottom: 2em;
+      text-align: center;
+    }
 
-        .button {
-            background-color: #d63384;
-            color: white;
-            padding: 0.8em 1.5em;
-            border: none;
-            border-radius: 12px;
-            text-decoration: none;
-            font-size: 1rem;
-            font-weight: 600;
-            box-shadow: 0 4px 12px rgba(214, 51, 132, 0.4);
-            transition: background-color 0.3s ease, box-shadow 0.3s ease;
-        }
+    .projects {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1.5em;
+      max-width: 800px;
+      width: 100%;
+    }
 
-        .button:hover {
-            background-color: #c02673;
-            box-shadow: 0 6px 16px rgba(214, 51, 132, 0.5);
-        }
+    .project-card {
+      background: white;
+      border-radius: 12px;
+      padding: 1.5em;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+      transition: transform 0.2s;
+    }
 
-        footer {
-            margin-top: 3em;
-            font-size: 0.8rem;
-            color: #aaa;
-        }
-    </style>
+    .project-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .project-title {
+      font-size: 1.5rem;
+      color: #d63384;
+      margin-bottom: 0.5em;
+    }
+
+    .project-desc {
+      font-size: 1rem;
+      margin-bottom: 1em;
+      color: #444;
+    }
+
+    .project-link {
+      color: #d63384;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    footer {
+      margin-top: 3em;
+      font-size: 0.8rem;
+      color: #aaa;
+    }
+  </style>
 </head>
 <body>
-    <h1>BeatMarker</h1>
-    <p>Die App für alle, die Marker in ihren Songs setzen wollen. Einfach. Schnell. Klar.</p>
-    <a href="#" class="button">Mehr erfahren</a>
+  <h1>Nina Heinrich</h1>
+  <p>Willkommen auf meiner Projektseite ✨</p>
 
-    <footer>
-        © 2025 Nina Heinrich
-    </footer>
+  <div class="projects">
+    <div class="project-card">
+      <div class="project-title">BeatMarker</div>
+      <div class="project-desc">
+        Eine iOS-App zum Setzen von Markern in Songs – perfekt für Tanzgruppen und Musiker.
+      </div>
+      <a class="project-link" href="https://ninapineda.github.io/beatmarker" target="_blank">Zur App-Homepage</a>
+    </div>
+
+      <div class="project-card">
+      <div class="project-title">Adventskalender</div>
+      <div class="project-desc">
+        Ein Adventskalender mit kleinen Rätseln für meine Family und Freunde.
+      </div>
+      <a class="project-link" href="https://ninapineda.github.io/adventskalender_website/adventskalender/home.html" target="_blank">Zum Adventskalender</a>
+    </div>
+
+    <div class="project-card">
+      <div class="project-title">Weitere Projekte</div>
+      <div class="project-desc">
+        Mehr spannende Projekte findest du auf meinem GitHub-Profil.
+      </div>
+      <a class="project-link" href="https://github.com/ninaPineda" target="_blank">Mein GitHub</a>
+    </div>
+  </div>
+
+  <footer>
+    © 2025 Nina Heinrich
+  </footer>
 </body>
 </html>
