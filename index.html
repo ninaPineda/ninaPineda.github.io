@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ninas Welt ✨</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(135deg, #ffe0f0, #ffccf9);
+      font-family: 'Comic Sans MS', cursive, sans-serif;
+      color: #d63384;
+      text-align: center;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    h1 {
+      font-size: 3em;
+      margin-bottom: 10px;
+      text-shadow: 0 0 10px #ff66cc, 0 0 20px #ff66cc;
+    }
+
+    p {
+      font-size: 1.5em;
+      margin-bottom: 30px;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 15px 30px;
+      margin: 10px;
+      font-size: 1.2em;
+      color: white;
+      background: linear-gradient(90deg, #ff66cc, #ff99cc);
+      border: none;
+      border-radius: 30px;
+      text-decoration: none;
+      box-shadow: 0 0 10px #ff66cc, 0 0 20px #ff99cc;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .button:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 20px #ff66cc, 0 0 30px #ff99cc;
+    }
+
+    .sparkles {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background: url('https://i.gifer.com/origin/30/30a42421e4b5d238b1db3a93b7988d63_w200.gif') repeat;
+      opacity: 0.3;
+      z-index: 0;
+    }
+
+    .content {
+      z-index: 1;
+      position: relative;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="sparkles"></div>
+  <div class="content">
+    <h1>Willkommen in meiner bunten Welt! 🌸</h1>
+    <p>Hier findest du meine Projekte:</p>
+    <a class="button" href="https://ninaPineda.github.io/beatmarker/">BeatMarker App 🎵</a>
+    <a class="button" href="https://ninaPineda.github.io/anderesprojekt/">Anderes Projekt 🌟</a>
+  </div>
+</body>
+</html>
