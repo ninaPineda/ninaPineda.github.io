@@ -2,118 +2,48 @@
 <html lang="de">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Nina Heinrich – Projekte</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Poppins', sans-serif;
-      background: linear-gradient(135deg, #ffffff, #f8f4f9);
-      color: #333;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      padding: 2em;
-    }
-
-    h1 {
-      font-size: 2.5rem;
-      color: #d63384;
-      margin-bottom: 0.2em;
-    }
-
-    p {
-      font-size: 1.1rem;
-      color: #666;
-      margin-bottom: 2em;
-      text-align: center;
-    }
-
-    .projects {
-      display: grid;
-      grid-template-columns: 1fr;
-      gap: 1.5em;
-      max-width: 800px;
-      width: 100%;
-    }
-
-    .project-card {
-      background: white;
-      border-radius: 12px;
-      padding: 1.5em;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
-      transition: transform 0.2s;
-    }
-
-    .project-card:hover {
-      transform: translateY(-5px);
-    }
-
-    .project-title {
-      font-size: 1.5rem;
-      color: #d63384;
-      margin-bottom: 0.5em;
-    }
-
-    .project-desc {
-      font-size: 1rem;
-      margin-bottom: 1em;
-      color: #444;
-    }
-
-    .project-link {
-      color: #d63384;
-      text-decoration: none;
-      font-weight: 600;
-    }
-
-    footer {
-      margin-top: 3em;
-      font-size: 0.8rem;
-      color: #aaa;
-    }
-  </style>
-</head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio Onepager</title>
+<link rel="stylesheet" href="/css/style.css"></head>
 <body>
-  <h1>Nina Heinrich</h1>
-  <p>Willkommen auf meiner Projektseite ✨</p>
+    <nav class="navbar">
+    <a href="https://www.linkedin.com" target="_blank">LinkedIn</a>
+    <a href="https://github.com" target="_blank">GitHub</a>
+    <a href="#">Kontakt</a>
+  </nav>
+  <div class="container">
 
-  <div class="projects">
-    <div class="project-card">
-      <div class="project-title">BeatMarker</div>
-      <div class="project-desc">
-        Eine iOS-App zum Setzen von Markern in Songs – perfekt für Tanzgruppen und Musiker.
+    <div class="rad-wrapper">
+      <div class="rad" id="rad">
+        <div class="icon" id="icon0">
+          <img class="icon_image" src="/img/beatmarker.png"></img>
+        </div>
+        <div class="icon" id="icon1"> 
+          <img class="icon_image" src="/img/adventskalender.png"></img>
+        </div>
+        <div class="icon" id="icon2"> 
+          <img class="icon_image" src="/img/süiele.png"></img>
+        </div>
+        <div class="icon" id="icon3"> 
+          <img class="icon_image" src="/img/git.png"></img>
+        </div>
+                <div class="icon" id="icon4"> 
+          <img class="icon_image" src="/img/git.png"></img>
+        </div>
+                <div class="icon" id="icon5"> 
+          <img class="icon_image" src="/img/git.png"></img>
+        </div>
       </div>
-      <a class="project-link" href="https://ninapineda.github.io/beatmarker/index.html" target="_blank">Zur App-Homepage</a>
     </div>
 
-      <div class="project-card">
-      <div class="project-title">Adventskalender</div>
-      <div class="project-desc">
-        Ein Adventskalender mit kleinen Rätseln für meine Family und Freunde.
-      </div>
-      <a class="project-link" href="https://ninapineda.github.io/adventskalender_website/adventskalender/home.html" target="_blank">Zum Adventskalender</a>
+    <div class="project-info" id="projectInfo">
+      <h2 id="title">Projekt 1</h2>
+      <p id="desc">Beschreibung von Projekt 1.</p>
+      <a id="link" href="#">Mehr erfahren</a>
     </div>
 
-      <div class="project-card">
-      <div class="project-title">Spiele</div>
-      <div class="project-desc">
-        Random Spiele aus Langeweile :D.
-      </div>
-      <a class="project-link" href="https://ninapineda.github.io/funGame/index.html" target="_blank">Zu den Spielen</a>
-    </div>
-    <div class="project-card">
-      <div class="project-title">Weitere Projekte</div>
-      <div class="project-desc">
-        Mehr spannende Projekte findest du auf meinem GitHub-Profil.
-      </div>
-      <a class="project-link" href="https://github.com/ninaPineda" target="_blank">Mein GitHub</a>
-    </div>
   </div>
 
-  <footer>
-    © 2025 Nina Heinrich
-  </footer>
+  <script src="/js/script.js"></script>
 </body>
 </html>
