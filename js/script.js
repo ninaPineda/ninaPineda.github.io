@@ -1,14 +1,14 @@
     const infos = [
       {
-        title: "Projekt 1",
-        desc: "Beschreibung von Projekt 1.",
-        link: "#",
+        title: "Beatmarker",
+        desc: "BeatMarker ist eine minimalistische App, mit der du Musikstücke ganz einfach analysieren und die Beats visuell markieren kannst. Ideal für Tänzer:innen, Choreograf:innen oder Musiker:innen, die Takte zählen, Bewegungen timen oder rhythmische Abläufe planen wollen.",
+        link: "https://ninapineda.github.io/beatmarker/index.html",
         color: getComputedStyle(document.documentElement).getPropertyValue('--color-0')
       },
       {
-        title: "Projekt 2",
-        desc: "Beschreibung von Projekt 2.",
-        link: "#",
+        title: "Adventskalender",
+        desc: "Dieser digitale Adventskalender überrascht dich jeden Tag mit einem neuen interaktiven Rätsel, Spiel oder einer kleinen Überraschung. Ob Knobelfans, Familien oder neugierige Entdecker:innen – hier kommt jeder auf seine Kosten.",
+        link: "https://ninapineda.github.io/adventskalender_website/adventskalender/home.html",
         color: getComputedStyle(document.documentElement).getPropertyValue('--color-1')
       },
       {
@@ -45,7 +45,7 @@
 
       current = (current + direction + 6) % 6;
       const rad = document.getElementById('rad');
-      rad.style.transform = `translate(-50%, -50%) rotate(${current * 60}deg)`;
+      rad.style.transform = `translate(-50%, -50%) rotate(${current * -60}deg)`;
 
       const info = infos[current];
       document.body.style.backgroundColor = info.color;
