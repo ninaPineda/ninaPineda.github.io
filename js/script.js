@@ -1,0 +1,62 @@
+    const infos = [
+      {
+        title: "Projekt 1",
+        desc: "Beschreibung von Projekt 1.",
+        link: "#",
+        color: getComputedStyle(document.documentElement).getPropertyValue('--color-0')
+      },
+      {
+        title: "Projekt 2",
+        desc: "Beschreibung von Projekt 2.",
+        link: "#",
+        color: getComputedStyle(document.documentElement).getPropertyValue('--color-1')
+      },
+      {
+        title: "Projekt 3",
+        desc: "Beschreibung von Projekt 3.",
+        link: "#",
+        color: getComputedStyle(document.documentElement).getPropertyValue('--color-2')
+      },
+      {
+        title: "Projekt 4",
+        desc: "Beschreibung von Projekt 4.",
+        link: "#",
+        color: getComputedStyle(document.documentElement).getPropertyValue('--color-3')
+      },
+      {
+        title: "Projekt 5",
+        desc: "Beschreibung von Projekt 5.",
+        link: "#",
+        color: getComputedStyle(document.documentElement).getPropertyValue('--color-4')
+      },
+      {
+        title: "Projekt 6",
+        desc: "Beschreibung von Projekt 6.",
+        link: "#",
+        color: getComputedStyle(document.documentElement).getPropertyValue('--color-5')
+      }
+    ];
+    let current = 0;
+    let rotating = false;
+
+    function rotate(direction) {
+      if (rotating) return;
+      rotating = true;
+
+      current = (current + direction + 6) % 6;
+      const rad = document.getElementById('rad');
+      rad.style.transform = `translate(-50%, -50%) rotate(${current * 60}deg)`;
+
+      const info = infos[current];
+      document.body.style.backgroundColor = info.color;
+      document.getElementById('title').textContent = info.title;
+      document.getElementById('desc').textContent = info.desc;
+      document.getElementById('link').href = info.link;
+
+      setTimeout(() => rotating = false, 700);
+    }
+
+    window.addEventListener('wheel', (e) => {
+      e.preventDefault();
+      rotate(e.deltaY > 0 ? 1 : -1);
+    }, { passive: false });
